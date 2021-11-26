@@ -7,3 +7,5 @@
       copy: src=./index.html dest=/var/www/html/
     - name: start service
       service: name=httpd state=started
+    - name: user add
+      user: name=gagandeep state=present
